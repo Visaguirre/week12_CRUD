@@ -1,0 +1,93 @@
+
+
+
+body {
+    background-image: linear-gradient(150deg, #3305b0 0%, #9c19b3 100%);
+    font-family: "Poppins", sans-serif;
+    margin: 0 50px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container{
+    overflow-y: scroll;
+  }
+  
+  
+ h4,h5{
+    color:#eef7ee;
+ }
+  
+  .container::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  
+  #addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.953);
+    background: #e5e5e5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fa-plus,.fa-edit,.fa-trash {
+    background-color: #07bf07;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    
+  }
+
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #07bf07;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  
+  #tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    
+    
+  }
+  
+  #tasks div {
+    border: 3px solid  #07bf07;
+    background-color: #fdfffd;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+  }
+  
+  #tasks div .options {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #tasks div .options i {
+    cursor: pointer;
+  }
+  
+  #msg {
+    color: red;
+  }
+
+  .task-text{
+    background-color: white;
+    background-image: white;
+  }
